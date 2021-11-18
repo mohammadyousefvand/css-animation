@@ -18,6 +18,7 @@ section h2 {
   color: #fff;
   text-transform: uppercase;
   font-size: 7em;
+  user-select: none;
 }
 section .set {
   width: 100%;
@@ -31,43 +32,46 @@ section .set div {
   position: absolute;
   display: block;
 }
+
+/*-------animation--------*/
+
 section .set div:nth-child(1) {
   left: 20%;
   animation: animite 15s linear infinite;
   animation-delay: -7s;
 }
 section .set div:nth-child(2) {
-    left: 50%;
-    animation: animite 20s linear infinite;
-    animation-delay: -5s;
-  }
-  section .set div:nth-child(3) {
-    left: 70%;
-    animation: animite 20s linear infinite;
-    animation-delay: 0s;
-  }
-  section .set div:nth-child(4) {
-    left: 0%;
-    animation: animite 15s linear infinite;
-    animation-delay: -5s;
-  }
-  section .set div:nth-child(5) {
-    left: 85%;
-    animation: animite 18s linear infinite;
-    animation-delay: -10s;
-  }
-  section .set div:nth-child(6) {
-    left: 0%;
-    animation: animite 12s linear infinite;
-  }
-  section .set div:nth-child(7) {
-    left: 15%;
-    animation: animite 14s linear infinite;
-  }
-  section .set div:nth-child(8) {
-    left: 60%;
-    animation: animite 15s linear infinite;
-  }
+  left: 50%;
+  animation: animite 20s linear infinite;
+  animation-delay: -5s;
+}
+section .set div:nth-child(3) {
+  left: 70%;
+  animation: animite 20s linear infinite;
+  animation-delay: 0s;
+}
+section .set div:nth-child(4) {
+  left: 0%;
+  animation: animite 15s linear infinite;
+  animation-delay: -5s;
+}
+section .set div:nth-child(5) {
+  left: 85%;
+  animation: animite 18s linear infinite;
+  animation-delay: -10s;
+}
+section .set div:nth-child(6) {
+  left: 0%;
+  animation: animite 12s linear infinite;
+}
+section .set div:nth-child(7) {
+  left: 15%;
+  animation: animite 14s linear infinite;
+}
+section .set div:nth-child(8) {
+  left: 60%;
+  animation: animite 15s linear infinite;
+}
 @keyframes animite {
   0% {
     opacity: 0;
@@ -94,11 +98,11 @@ section .set div:nth-child(2) {
     transform: translateX(-20px) rotate(225deg);
   }
 }
-.set2{
-    transform: scale(1.5) rotateY(180deg);
-    filter: blur(2px);
+.set2 {
+  transform: scale(1.5) rotateY(180deg);
+  filter: blur(2px);
 }
-.set3{
-    transform: scale(0.6) rotateY(180deg);
-    filter: blur(4px);
+.set3 {
+  transform: scale(0.6) rotateY(180deg);
+  filter: blur(4px);
 }
